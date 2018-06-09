@@ -7,6 +7,7 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
+     conslole.log("Hello World");};
 
 }
 
@@ -23,10 +24,23 @@ function helloWorld() {
              lambdaSchool(8); // returns 8
 */
 
-function lambdaSchool() {
-
-}
-
+ function LambdaSchool(num){
+  for (num =0; num<100;num++){
+    if( num % 3 === 0 && num% 5 ===0){
+      console.log( "Lambda School");
+    }
+    else if (num % 3 === 0){
+      console.log("Lamda");
+    }
+    else if (num% 5 ===0){
+      console.log("School");
+    }
+    else {
+      console.log(num);
+    }
+  }
+ }
+LambdaSchool(num);
 /*
 3. Write a function called longestString that has a single parameter called strs.
      strs will be an array of strings.
@@ -38,10 +52,17 @@ function lambdaSchool() {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
+ strs=[ ("hi","Hello","Nihao","BuenosDias","GutenTag","SawadeeKup") ]
 
-}
+function LongestString(strs){
+var count = 0;
+ var longest;
+ for (i=0;i<strs.length;i++){
+   if (strs[i].length>count){
+   longest = strs[i];
 
+
+ }
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
      users is an array of user objects.
@@ -64,6 +85,18 @@ function longestString() {
 */
 
 function computeUserAverageAge() {
+     users.forEach(function (user ){
+       
+         sum+=user.age;
+         avg =sum/users.length;
+       })
+       console.log(Math.round(avg));
+       };
+       ComputeAverageAge(users);
+               
+     
+
+             
 
 }
 
